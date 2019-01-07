@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+  <definition name="render_newlist" template="/WEB-INF/client/render/newlist.jsp"></definition>
+ <definition name="client_template" template="/WEB-INF/client/template/template.jsp">
+       <put-attribute name="base_tag"     value="/" />
+        <put-attribute name="title_tag"     value="" />
+         <put-attribute name="keyword_tag"     value="" />
+        <put-attribute name="description_tag"     value="" />
+        <put-attribute name="header"     value="/WEB-INF/client/template/header.jsp" />
+        <put-attribute name="slide"     value="/WEB-INF/client/template/slide.jsp" />
+        <put-attribute name="content"         value="" />
+        <put-attribute name="footer"     value="/WEB-INF/client/template/footer.jsp" />
+    </definition>
+ 
+ 	<definition name="index" extends="client_template">
+           <put-attribute name="content"         value="/WEB-INF/client/index.jsp" />
+    </definition>
+    <definition name="cltcontactus" extends="client_template">
+           <put-attribute name="content"         value="/WEB-INF/client/contactus.jsp" />
+    </definition>
+    <definition name="cltourpeople" extends="client_template">
+           <put-attribute name="content"         value="/WEB-INF/client/ourpeople.jsp" />
+    </definition>
+    <definition name="AboutUs" extends="client_template">
+           <put-attribute name="content"         value="/WEB-INF/client/AboutUs.jsp" />
+    </definition>
+     <definition name="FeNews" extends="client_template">
+           <put-attribute name="content"         value="/WEB-INF/client/news.jsp" />
+    </definition>
+
+    <definition name="partners" extends="client_template">
+           <put-attribute name="content"         value="/WEB-INF/client/partners.jsp" />
+    </definition>
+	<definition name="ouractivities" extends="client_template">
+           <put-attribute name="content"         value="/WEB-INF/client/ouractivities.jsp" />
+    </definition>
+  	<definition name="postdetail" extends="client_template">
+           <put-attribute name="content"         value="/WEB-INF/client/postdetail.jsp" />
+    </definition>
+</tiles-definitions>

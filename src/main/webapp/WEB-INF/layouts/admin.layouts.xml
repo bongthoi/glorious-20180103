@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+ 
+    <definition name="admin_template" template="/WEB-INF/admin/template/template.jsp">
+       <put-attribute name="base_tag"     value="/" />
+        <put-attribute name="title_tag"     value="" />
+        <put-attribute name="description_tag"     value="" />
+        <put-attribute name="header"     value="/WEB-INF/admin/template/header.jsp" />
+        <put-attribute name="sidebar"     value="/WEB-INF/admin/template/sidebar.jsp" />
+        <put-attribute name="content"         value="" />
+        <put-attribute name="footer"     value="/WEB-INF/admin/template/footer.jsp" />
+    </definition>
+    
+      <definition name="admin_template2"  template="/WEB-INF/admin/template/template2.jsp">
+       <put-attribute name="base_tag"     value="/glorious/" />
+        <put-attribute name="content"         value="" />
+   
+    </definition>
+    
+      <definition name="dashboard" extends="admin_template">
+           <put-attribute name="content"         value="/WEB-INF/admin/dashboard.jsp" />
+    </definition>
+      
+      
+        <definition name="adabout" extends="admin_template">
+           <put-attribute name="content"         value="/WEB-INF/admin/abouts.jsp" />
+    	</definition>
+	    <definition name="adcontact" extends="admin_template">
+	       <put-attribute name="content"         value="/WEB-INF/admin/contacts.jsp" />
+	    </definition>
+	    <definition name="adslide" extends="admin_template">
+	       <put-attribute name="content"         value="/WEB-INF/admin/slides.jsp" />
+	    </definition>
+	    <definition name="addepartment" extends="admin_template">
+	    	<put-attribute name="content"         value="/WEB-INF/admin/departments.jsp" />
+	    </definition>
+	    <definition name="aduser"       extends="admin_template">
+	    	<put-attribute name="content"         value="/WEB-INF/admin/users.jsp"></put-attribute>
+	    </definition>
+	     <definition name="adpeople"       extends="admin_template">
+	    	<put-attribute name="content"         value="/WEB-INF/admin/peoples.jsp"></put-attribute>
+	    </definition>
+	    
+	    <definition name="adPartners"       extends="admin_template">
+	    	<put-attribute name="content"         value="/WEB-INF/admin/partners.jsp"></put-attribute>
+	    </definition>
+	    
+	    <definition name="adPartnersnew"       extends="admin_template">
+	    	<put-attribute name="content"         value="/WEB-INF/admin/partners-new.jsp"></put-attribute>
+	    </definition>
+	    <definition name="adPartnersupdate"       extends="admin_template">
+	    	<put-attribute name="content"         value="/WEB-INF/admin/partners-update.jsp"></put-attribute>
+	    </definition>
+	    <definition name="adCatgory"       extends="admin_template">
+	    	<put-attribute name="content"         value="/WEB-INF/admin/catgories.jsp"></put-attribute>
+	    </definition>
+	    <definition name="adnews"       extends="admin_template">
+	    	<put-attribute name="content"  value="/WEB-INF/admin/news.jsp"></put-attribute>
+	    </definition>    
+	      <definition name="adnewpost" extends="admin_template">
+           <put-attribute name="content" 		value="/WEB-INF/admin/news-post-new.jsp" />
+    </definition>
+    
+        <definition name="adnewpost-edit" extends="admin_template">
+           <put-attribute name="content" 		value="/WEB-INF/admin/news-post-edit.jsp" />
+    </definition>
+    
+         <definition name="adActivitiesCategory" extends="admin_template">
+           <put-attribute name="content" 		value="/WEB-INF/admin/AtivitiesCatgories.jsp" />
+    </definition>
+     <definition name="adActivitiesPosts" extends="admin_template">
+           <put-attribute name="content" 		value="/WEB-INF/admin/ActivitiesPosts.jsp" />
+    </definition>
+         <definition name="adActivitiesPosts-new" extends="admin_template">
+           <put-attribute name="content" 		value="/WEB-INF/admin/Activities-post-new.jsp" />
+    </definition>
+         <definition name="adActivitiesPosts-edit" extends="admin_template">
+           <put-attribute name="content" 		value="/WEB-INF/admin/Activities-post-edit.jsp" />
+    </definition>
+</tiles-definitions>
